@@ -94,4 +94,12 @@ obj-$(CONFIG_MODS_MODBUS_EXT) += modbus_ext.o
 obj-$(CONFIG_FSUSB42_MUX) += fsusb42_mux.o
 obj-$(CONFIG_SENSORS_STML0XX) += stml0xx/
 obj-$(CONFIG_TPS61280) += tps61280.o
+<<<<<<< HEAD
 obj-$(CONFIG_MOTOMODS) += motomods/
+=======
+
+# TODO: remove me b/62058353
+subdir-ccflags-y += \
+	-Wno-ignored-attributes
+obj-y += moto-dtv/
+>>>>>>> 0b95e2d0d0a5 (drivers: misc: import Moto DTV drivers)
