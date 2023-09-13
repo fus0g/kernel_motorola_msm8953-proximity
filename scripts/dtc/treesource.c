@@ -23,7 +23,7 @@
 
 extern FILE *yyin;
 extern int yyparse(void);
-extern YYLTYPE yylloc;
+YYLTYPE yylloc;
 
 struct boot_info *the_boot_info;
 int treesource_error;
